@@ -679,7 +679,7 @@ footer {
 
 .first-screen {
 	height: calc(100vh - 75px);
-	background: url("../../img/overview/first-screen__bg.jpg") center/cover no-repeat;
+	background: url("../img/overview/first-screen__bg.jpg") center/cover no-repeat;
 	position: relative;
 }
 @media (max-width: 767px) {
