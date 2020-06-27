@@ -1614,10 +1614,6 @@ ul {
 	        justify-content: flex-end;
 }
 .catalog-footer__link {
-	font-family: "BMW Bold", sans-serif;
-	text-transform: uppercase;
-	color: #000;
-	font-size: 14px;
 	display: block;
 	position: relative;
 }
@@ -1625,6 +1621,12 @@ ul {
 	.catalog-footer__link {
 		margin: 0 0 40px 0;
 	}
+}
+.catalog-footer__link span {
+	font-family: "BMW Bold", sans-serif;
+	text-transform: uppercase;
+	color: #000;
+	font-size: 14px;
 }
 .catalog-footer__link:after {
 	content: "";
