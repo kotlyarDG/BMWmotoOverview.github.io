@@ -21,7 +21,7 @@
 	font-style: normal;
 }
 body {
-	font-family: "BMW Regular", sans-serif, sans-serif;
+	font-family: "BMW Regular", sans-serif;
 	color: #393939;
 	margin: 0;
 	padding: 0;
@@ -1862,10 +1862,7 @@ ul {
 	line-height: 16px;
 }
 .footer__menu {
-	margin-left: 55px;
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 100%;
-	        flex: 0 1 100%;
+	width: 100%;
 }
 @media (max-width: 767px) {
 	.footer__menu {
@@ -1930,11 +1927,14 @@ ul {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin: 0 0 0 55px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
 	.column-menu {
-		-ms-flex-wrap: wrap;
-		    flex-wrap: wrap;
+		margin: 0 0 0 0;
 	}
 }
 .column-menu__col {
@@ -1989,9 +1989,6 @@ ul {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
 }
 @media (max-width: 767px) {
 	.bottom__flex {
@@ -2012,6 +2009,35 @@ ul {
 		margin-bottom: 15px;
 	}
 }
+.bottom__logo-slogan {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+@media (max-width: 767px) {
+	.bottom__logo-slogan {
+		width: 100%;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+}
+.bottom__logo {
+	width: 200px;
+	height: 46px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.bottom__logo img {
+	max-width: 100%;
+}
 .bottom__slogan {
 	font-family: "BMW Bold", sans-serif;
 	color: #393939;
@@ -2023,6 +2049,7 @@ ul {
 	position: relative;
 	-ms-flex-negative: 0;
 	    flex-shrink: 0;
+	margin: 0 0 0 20px;
 }
 .bottom__slogan:before {
 	content: "";
