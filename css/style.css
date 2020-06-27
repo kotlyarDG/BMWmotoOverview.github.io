@@ -1627,6 +1627,7 @@ ul {
 	text-transform: uppercase;
 	color: #000;
 	font-size: 14px;
+	font-weight: 600;
 }
 .catalog-footer__link:after {
 	content: "";
