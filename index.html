@@ -97,84 +97,103 @@
     <div class="catalog header__catalog">
         <div class="catalog__wrapper">
         <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
-            <div class="catalog__categories catalog__categories--shown">
-                <span class="catalog__cat catalog__cat--active">Мотоциклы BMW</span>
-                <span class="catalog__cat">Аксессуары</span>
-                <span class="catalog__cat">Сервис</span>
-                <span class="catalog__cat">Владельцам BMW</span>
-                <span class="catalog__cat">Мир BMW</span>
-                <span class="catalog__cat">Дилерский центр</span>
-            </div>
+        <!-- Добавить класс "catalog__categories--parent" или "catalog__sub-categories--parent", если элемент содержит подпункты -->
+            <ul class="catalog__categories catalog__categories--shown">
+                <li class="catalog__cat catalog__cat--active catalog__cat--parent">
+                    <span>Мотоциклы BMW</span>
+                    <ul class="catalog__sub-categories catalog__sub-categories--shown">
+                        <li class="catalog__sub-cat"><span>Adventure</span></li>
+                        <li class="catalog__sub-cat catalog__sub-cat--active catalog__sub-cat--parent">
+                            <span>Roadster</span>
+
+                            <div class="catalog__items catalog__items--shown">
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">G 310 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">BMW F 750 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">G 310 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">BMW F 750 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">G 310 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">BMW F 750 GS</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="catalog__sub-cat catalog__sub-cat--parent"><span>Sport</span></li>
+                        <li class="catalog__sub-cat catalog__sub-cat--parent"><span>Tour</span></li>
+                        <li class="catalog__sub-cat catalog__sub-cat--parent">
+                            <span>Heritage</span>
+                            <div class="catalog__items">
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">G 310 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">BMW F 750 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">G 310 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">BMW F 750 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">G 310 GS</a>
+                                </div>
+                                <div class="catalog__item">
+                                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
+                                    <a href="#">BMW F 750 GS</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="catalog__sub-cat"><span>Maxi-scooter</span></li>
+                        <li class="catalog__sub-cat"><span>Мотоциклы с пробегом</span></li>
+                        <li class="catalog__sub-cat"><span>Мотоциклы в наличии</span></li>
+                    </ul>
+                </li>
+                <li class="catalog__cat"><span>Аксессуары</span></li>
+                <li class="catalog__cat"><span>Сервис</span>
+                    
+                </li>
+                <li class="catalog__cat">
+                    <span>Владельцам BMW</span>
+                </li>
+                <li class="catalog__cat"><span>Мир BMW</span></li>
+                <li class="catalog__cat"><span>Дилерский центр</span></li>
+            </ul>
 
             <!-- Добавить класс "catalog__categories--shown" для анимированного появления списка категорий -->
-            <div class="catalog__categories catalog__categories--shown">
-                <span class="catalog__cat catalog__cat--small">Adventure</span>
-                <span class="catalog__cat catalog__cat--small catalog__cat--active">Roadster</span>
-                <span class="catalog__cat catalog__cat--small">Sport</span>
-                <span class="catalog__cat catalog__cat--small">Tour</span>
-                <span class="catalog__cat catalog__cat--small">Heritage</span>
-                <span class="catalog__cat catalog__cat--small">Maxi-scooter</span>
-                <span class="catalog__cat catalog__cat--small">Мотоциклы с пробегом</span>
-                <span class="catalog__cat catalog__cat--small">Мотоциклы в наличии</span>
-            </div>
+            
 
             <!-- Добавить класс "catalog__items--shown" для анимированного появления списка товаров -->
-            <div class="catalog__items catalog__items--shown">
-                <div class="catalog__item">
-                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
-                    <a href="#">G 310 GS</a>
-                </div>
-                <div class="catalog__item">
-                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
-                    <a href="#">BMW F 750 GS</a>
-                </div>
-                <div class="catalog__item">
-                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
-                    <a href="#">G 310 GS</a>
-                </div>
-                <div class="catalog__item">
-                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
-                    <a href="#">BMW F 750 GS</a>
-                </div>
-                <div class="catalog__item">
-                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
-                    <a href="#">G 310 GS</a>
-                </div>
-                <div class="catalog__item">
-                    <div class="catalog__item-img"><img src="img/cat1.jpg" alt=""></div>
-                    <a href="#">BMW F 750 GS</a>
-                </div>
-            </div>
-
-
+            
 
             <div class="catalog-footer">
                 <div class="catalog-footer__flex">
-                    <div class="catalog-footer__items">
-                        <a href="#" class="catalog-footer__item">
-                            <div class="catalog-footer__img"><img src="img/header-icons/01.svg" alt=""></div>
-                            <p class="catalog-footer__text">Создайте свой мотоцикл</p>
-                        </a>
-                        <a href="#" class="catalog-footer__item">
-                            <div class="catalog-footer__img"><img src="img/header-icons/02.svg" alt=""></div>
-                            <p class="catalog-footer__text">Найти дилера</p>
-                        </a>
-                        <a href="#" class="catalog-footer__item">
-                            <div class="catalog-footer__img"><img src="img/header-icons/03.svg" alt=""></div>
-                            <p class="catalog-footer__text">Обзор моделей</p>
-                        </a>
-                        <a href="#" class="catalog-footer__item">
-                            <div class="catalog-footer__img"><img src="img/header-icons/04.svg" alt=""></div>
-                            <p class="catalog-footer__text">События</p>
-                        </a>
-                        <a href="#" class="catalog-footer__item">
-                            <div class="catalog-footer__img"><img src="img/header-icons/05.svg" alt=""></div>
-                            <p class="catalog-footer__text">Тест-райд</p>
-                        </a>
-                    </div>
                     <a href="#" class="catalog-footer__link">make life a ride</a>
                 </div>
-            </div>
+            </div> 
+
+            
         </div>
     </div>
 
@@ -243,32 +262,23 @@
             </div>
             <div class="column-menu footer__menu">
                 <div class="column-menu__col">
-                    <a href="https://www.bmw-motorrad.ru/" target="_blank" class="column-menu__link column-menu__link--external">BMW Motorrad Motorsport</a>
-                    <a href="https://www.bmwgroup.com/en.html" target="_blank" class="column-menu__link column-menu__link--external">Автомобили BMW</a>
-                    <a href="https://www.bmw-motorrad.ru/" target="_blank" class="column-menu__link column-menu__link--external">Автомобили MINI</a>
+                    <a href="https://www.bmw-motorrad.ru/" target="_blank" class="column-menu__link column-menu__link--external">BMW Russia</a>
                     <a href="https://www.bmwgroup.com/en.html" target="_blank" class="column-menu__link column-menu__link--external">BMW Group</a>
-                </div>
-                <div class="column-menu__col">
-                    <a href="https://www.bmw-motorrad.ru/" target="_blank" class="column-menu__link column-menu__link--external">Музей BMW</a>
-                    <a href="https://www.bmwgroup.com/en.html" target="_blank" class="column-menu__link column-menu__link--external">Специальная техника</a>
-                    <a href="https://www.bmw-motorrad.ru/" target="_blank" class="column-menu__link column-menu__link--external">Запрос коммерческого предложения</a>
-                    <a href="#" class="column-menu__link">Как стать дилером BMW Motorrad</a>
-                </div>                
-                <div class="column-menu__col">
                     <a href="#" class="column-menu__link">Cookies</a>
                     <a href="#" class="column-menu__link">Политика конфиденциальности</a>
-                    <a href="#" class="column-menu__link">Перепечатка информации</a>
                     <a href="#" class="column-menu__link">Правовая информация</a>
-                </div>   
+                </div>  
             </div>
         </div>
     </footer>
     <div class="bottom">
         <div class="container bottom__flex">
             <p class="bottom__copyright">© BMW AG 2019<br>Обратите внимание: Все мотоциклы поставляются с оборудованием, соответствующим требованиям законодательства (например, фильтрами выхлопных газов и боковыми отражателями). Фотографии и видеозаписи мотоциклов, представленных на этом сайте, могут незначительно отличаться от моделей для российского рынка.</p>
-
-            <!-- Анимация будет при добавлении класса "bottom__slogan--lined" -->
-            <span class="bottom__slogan bottom__slogan--lined">MAKE LIFE A RIDE</span>
+            <div class="bottom__logo-slogan">
+                <div class="bottom__logo"><img src="img/bottom-logo.png" alt="logo" ></div>
+                <!-- Анимация будет при добавлении класса "bottom__slogan--lined" -->
+                <span class="bottom__slogan bottom__slogan--lined">MAKE LIFE A RIDE</span>
+            </div>
         </div>
     </div>
 
